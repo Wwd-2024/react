@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 // const heading = React.createElement("h1", {
 //     id:"tt",
@@ -26,13 +28,13 @@
 //************* Sibling elements
 
 
-// const grandParent = React.createElement("div",{id:"grandParent"}, [React.createElement("div",{id:"parent"},React.createElement("h1",{id:"child1"},"Parent1 - child")),React.createElement("div",{id:"parent2"},React.createElement("h1",{id:"child2"},"Parent2 - child"))]);
+const grandParent = React.createElement("div",{id:"grandParent"}, [React.createElement("div",{id:"parent"},React.createElement("h1",{id:"child1"},"Parent1 - child")),React.createElement("div",{id:"parent2"},React.createElement("h1",{id:"child2"},"Parent2 - child"))]);
 
-// const root =  ReactDOM.createRoot(document.getElementById("body"));
+const root =  ReactDOM.createRoot(document.getElementById("body"));
 
-// root.render(grandParent);
+root.render(grandParent);
 
-// console.log(grandParent);
+console.log(grandParent);
 
 
 
